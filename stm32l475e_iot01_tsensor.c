@@ -19,6 +19,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01_tsensor.h"
+#include <tsensor.h>
 
 /** @addtogroup BSP
   * @{
