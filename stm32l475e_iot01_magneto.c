@@ -18,7 +18,9 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32l475e_iot01_magneto.h"
+#include <stm32l475e_iot01_magneto.h>
+#include <lis3mdl.h>
+#include <magneto.h>
 
 /** @addtogroup BSP
   * @{
