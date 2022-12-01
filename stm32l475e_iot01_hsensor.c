@@ -18,7 +18,10 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32l475e_iot01_hsensor.h"
+#include <stm32l475e_iot01_hsensor.h>
+#include <hts221.h>
+#include <hts221_reg.h>
+#include <hsensor.h>
 
 /** @addtogroup BSP
   * @{
@@ -35,7 +38,7 @@
 /** @defgroup STM32L475E_IOT01_HUMIDITY_Private_Variables HUMIDITY Private Variables 
   * @{
   */ 
-static HSENSOR_DrvTypeDef *Hsensor_drv;  
+static HTS221_CommonDrv_t *Hsensor_drv;
 /**
   * @}
   */
@@ -52,13 +55,14 @@ uint32_t BSP_HSENSOR_Init(void)
 {
   uint32_t ret;
   
-  if(HTS221_H_Drv.ReadID(HTS221_I2C_ADDRESS) != HTS221_WHO_AM_I_VAL)
+  // HTS221_H_Drv
+  if(HTS221_COMMON_Driver.ReadID(HTS221_I2C_ADDRESS) != HTS221_WHO_AM_I_VAL)
   {
     ret = HSENSOR_ERROR;
   }
   else
-  {
-    Hsensor_drv = &HTS221_H_Drv;
+  { // &HTS221_H_Drv
+    Hsensor_drv = &HTS221_COMMON_Driver;
     /* HSENSOR Init */   
     Hsensor_drv->Init(HTS221_I2C_ADDRESS);
     ret = HSENSOR_OK;
