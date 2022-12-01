@@ -27,7 +27,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01.h"
-#include "../Components/lps22hb/lps22hb.h"
+#include "lps22hb.h"
 
 /** @addtogroup BSP
   * @{

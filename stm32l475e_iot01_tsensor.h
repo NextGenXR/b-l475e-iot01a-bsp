@@ -28,9 +28,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01.h"
 #ifdef USE_LPS22HB_TEMP
-#include "../Components/lps22hb/lps22hb.h"
+#include "lps22hb.h"
 #else /* USE_HTS221_TEMP */
-#include "../Components/hts221/hts221.h"
+#include "hts221.h"
 #endif
 
 /** @addtogroup BSP

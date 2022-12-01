@@ -27,7 +27,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01.h"
-#include "../Components/hts221/hts221.h"
+#include "hts221.h"
 
 /** @addtogroup BSP
   * @{

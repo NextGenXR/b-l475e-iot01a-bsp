@@ -28,7 +28,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01.h"   
 /* Include Magnetometer component driver */
-#include "../Components/lis3mdl/lis3mdl.h"  
+#include "lis3mdl.h"
    
 /** @addtogroup BSP
   * @{

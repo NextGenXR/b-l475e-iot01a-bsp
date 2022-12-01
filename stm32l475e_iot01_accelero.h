@@ -28,7 +28,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01.h"
 /* Include Accelero component driver */
-#include "../Components/lsm6dsl/lsm6dsl.h"
+#include "lsm6dsl.h"
    
 /** @addtogroup BSP
   * @{
