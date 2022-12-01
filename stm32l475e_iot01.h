@@ -26,7 +26,8 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32l4xx_hal.h"
+#include <stm32yyxx_hal.h>
+#include <stm32yyxx_hal_gpio.h>
 
 /** @addtogroup BSP
   * @{
