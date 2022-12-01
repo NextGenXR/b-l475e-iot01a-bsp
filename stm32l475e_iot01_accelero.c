@@ -19,6 +19,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l475e_iot01_accelero.h"
+#include "lsm6dsl.h"
+
 /** @addtogroup BSP
   * @{
   */ 
